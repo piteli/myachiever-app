@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AchieverVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    @IBAction func addAchieverBtnWerePressed(_ sender: Any) {
+        print("button was pressed!")
+    }
 }
 
