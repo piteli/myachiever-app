@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C4ABEF6237C40130047CB20 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ABEF5237C40130047CB20 /* CreateGoalVC.swift */; };
+		0C4ABEF8237C420D0047CB20 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ABEF7237C420D0047CB20 /* UIViewControllerExt.swift */; };
 		0C4E6387236903AC00FBBCE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E6386236903AC00FBBCE3 /* AppDelegate.swift */; };
 		0C4E6389236903AC00FBBCE3 /* AchieverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E6388236903AC00FBBCE3 /* AchieverVC.swift */; };
 		0C4E638C236903AD00FBBCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E638A236903AD00FBBCE3 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0C4ABEF5237C40130047CB20 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		0C4ABEF7237C420D0047CB20 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		0C4E6383236903AC00FBBCE3 /* myachiever-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myachiever-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4E6386236903AC00FBBCE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C4E6388236903AC00FBBCE3 /* AchieverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchieverVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		0C4E639E236903FF00FBBCE3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0C4ABEF7237C420D0047CB20 /* UIViewControllerExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				0C9AC71C2370694B004F1032 /* GoalType.swift in Sources */,
 				0C4E6389236903AC00FBBCE3 /* AchieverVC.swift in Sources */,
 				0C4E6387236903AC00FBBCE3 /* AppDelegate.swift in Sources */,
+				0C4ABEF8237C420D0047CB20 /* UIViewControllerExt.swift in Sources */,
 				0C4E638F236903AD00FBBCE3 /* myachiever_app.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
