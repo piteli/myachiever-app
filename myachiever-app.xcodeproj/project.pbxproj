@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1761F4237E0B2F00E24B6E /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1761F3237E0B2F00E24B6E /* FinishGoalVC.swift */; };
 		0C4ABEF6237C40130047CB20 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ABEF5237C40130047CB20 /* CreateGoalVC.swift */; };
 		0C4ABEF8237C420D0047CB20 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4ABEF7237C420D0047CB20 /* UIViewControllerExt.swift */; };
 		0C4E6387236903AC00FBBCE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4E6386236903AC00FBBCE3 /* AppDelegate.swift */; };
@@ -17,9 +18,12 @@
 		0C4E6394236903AE00FBBCE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4E6392236903AE00FBBCE3 /* LaunchScreen.storyboard */; };
 		0C5C3441236B12BB0074BB36 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C3440236B12BB0074BB36 /* GoalCell.swift */; };
 		0C9AC71C2370694B004F1032 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9AC71B2370694B004F1032 /* GoalType.swift */; };
+		0CF0DB32237D819900406E07 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0DB31237D819900406E07 /* UIViewExt.swift */; };
+		0CF0DB34237D870800406E07 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF0DB33237D870800406E07 /* UIButtonExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1761F3237E0B2F00E24B6E /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		0C4ABEF5237C40130047CB20 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		0C4ABEF7237C420D0047CB20 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		0C4E6383236903AC00FBBCE3 /* myachiever-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myachiever-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +36,8 @@
 		0C4E6395236903AE00FBBCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C5C3440236B12BB0074BB36 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		0C9AC71B2370694B004F1032 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		0CF0DB31237D819900406E07 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		0CF0DB33237D870800406E07 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 			children = (
 				0C4E6388236903AC00FBBCE3 /* AchieverVC.swift */,
 				0C4ABEF5237C40130047CB20 /* CreateGoalVC.swift */,
+				0C1761F3237E0B2F00E24B6E /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				0C4ABEF7237C420D0047CB20 /* UIViewControllerExt.swift */,
+				0CF0DB31237D819900406E07 /* UIViewExt.swift */,
+				0CF0DB33237D870800406E07 /* UIButtonExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -186,8 +195,11 @@
 				0C4ABEF6237C40130047CB20 /* CreateGoalVC.swift in Sources */,
 				0C9AC71C2370694B004F1032 /* GoalType.swift in Sources */,
 				0C4E6389236903AC00FBBCE3 /* AchieverVC.swift in Sources */,
+				0CF0DB32237D819900406E07 /* UIViewExt.swift in Sources */,
 				0C4E6387236903AC00FBBCE3 /* AppDelegate.swift in Sources */,
 				0C4ABEF8237C420D0047CB20 /* UIViewControllerExt.swift in Sources */,
+				0CF0DB34237D870800406E07 /* UIButtonExt.swift in Sources */,
+				0C1761F4237E0B2F00E24B6E /* FinishGoalVC.swift in Sources */,
 				0C4E638F236903AD00FBBCE3 /* myachiever_app.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
