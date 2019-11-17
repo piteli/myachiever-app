@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+let appDelegate = UIApplication.shared.delegate as? AppDelegate
+
 class AchieverVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -18,7 +20,7 @@ class AchieverVC: UIViewController {
         tableView.dataSource = self
         tableView.isHidden = false
     }
-
+ 
 
     @IBAction func addAchieverBtnWerePressed(_ sender: Any) {
         print("button was pressed!")

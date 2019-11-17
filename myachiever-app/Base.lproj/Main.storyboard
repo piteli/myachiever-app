@@ -365,6 +365,9 @@
                                             <constraint firstAttribute="width" constant="35" id="GBh-pL-VPL"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnWasPressed:" destination="2fv-NB-3Gp" eventType="touchUpInside" id="0Mh-eR-c5S"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.2776963596" green="0.62815276019999999" blue="0.1845578145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
