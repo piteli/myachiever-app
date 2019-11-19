@@ -25,6 +25,11 @@ class AchieverVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchCoreDataObjects()
+        tableView.reloadData()
+    }
+    
+    func fetchCoreDataObjects(){
         self.fetch { (complete) in
             if complete{
                 if goals.count >= 1{
@@ -34,7 +39,6 @@ class AchieverVC: UIViewController {
                 }
             }
         }
-        tableView.reloadData()
     }
  
 
@@ -62,9 +66,37 @@ extension AchieverVC : UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true;
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeGoal(atIndexPath: indexPath)
+            self.fetchCoreDataObjects()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        deleteAction.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+        return [deleteAction]
+    }
+    
 }
 
 extension AchieverVC{
+    func removeGoal(atIndexPath indexPath: IndexPath){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.delete(goals[indexPath.row])
+        do{
+            try managedContext.save()
+            print("successfully removed goal!")
+        }catch{
+            debugPrint("Could not remove\(error.localizedDescription)")
+        }
+    }
     func fetch(completion: (_ complete: Bool)->()){
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Goal")
