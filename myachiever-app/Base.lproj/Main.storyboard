@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -139,18 +139,39 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMu-nf-QrD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGq-bX-Cup">
+                                                            <rect key="frame" x="56.5" y="14.5" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="0.80463248239436624" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="yGq-bX-Cup" firstAttribute="centerX" secondItem="xMu-nf-QrD" secondAttribute="centerX" id="BQb-oR-Lha"/>
+                                                        <constraint firstItem="yGq-bX-Cup" firstAttribute="centerY" secondItem="xMu-nf-QrD" secondAttribute="centerY" id="TxN-gb-fei"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="xMu-nf-QrD" secondAttribute="bottom" id="1hA-4H-Cju"/>
                                                 <constraint firstItem="Fhl-xT-qPa" firstAttribute="top" secondItem="1Lf-65-nU6" secondAttribute="top" id="8Xo-uA-2Dm"/>
                                                 <constraint firstAttribute="bottom" secondItem="Fhl-xT-qPa" secondAttribute="bottom" constant="5" id="9bf-tX-GUy"/>
+                                                <constraint firstItem="xMu-nf-QrD" firstAttribute="top" secondItem="1Lf-65-nU6" secondAttribute="top" id="FTx-4h-ElJ"/>
+                                                <constraint firstItem="xMu-nf-QrD" firstAttribute="leading" secondItem="1Lf-65-nU6" secondAttribute="leading" id="G5v-Ux-A9x"/>
                                                 <constraint firstAttribute="trailing" secondItem="77P-4T-4Nf" secondAttribute="trailing" constant="8" id="Qbw-fG-0OB"/>
                                                 <constraint firstItem="77P-4T-4Nf" firstAttribute="leading" secondItem="Fhl-xT-qPa" secondAttribute="trailing" constant="10" id="jgH-ed-eSu"/>
                                                 <constraint firstItem="Fhl-xT-qPa" firstAttribute="leading" secondItem="1Lf-65-nU6" secondAttribute="leading" constant="10" id="lKt-4y-tUD"/>
+                                                <constraint firstAttribute="trailing" secondItem="xMu-nf-QrD" secondAttribute="trailing" id="n7A-Nu-PWI"/>
                                                 <constraint firstItem="77P-4T-4Nf" firstAttribute="top" secondItem="1Lf-65-nU6" secondAttribute="top" constant="8" id="rGd-XH-PNN"/>
                                                 <constraint firstAttribute="bottom" secondItem="77P-4T-4Nf" secondAttribute="bottom" constant="8" id="tXd-Hr-oQa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="xMu-nf-QrD" id="7Ul-CM-Fqh"/>
                                             <outlet property="goalDescLabel" destination="nVh-2I-dZg" id="zFF-o1-xiu"/>
                                             <outlet property="goalProgress" destination="77P-4T-4Nf" id="VP6-lO-Ums"/>
                                             <outlet property="goalProgressLabel" destination="77P-4T-4Nf" id="CXU-ba-dKj"/>
